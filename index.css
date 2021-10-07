@@ -1,3 +1,22 @@
-h1 {
-    color: blue
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: disc;
+    color: #000000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #00563f;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
 }
