@@ -15,25 +15,26 @@ a {
     position: fixed;
     justify-content: flex-end;
     width: 100%;
-    background-color: #00563f;
+    background-color: #3e4dd0;
 }
 
 .nav-list {
     display: flex;
     margin-right: 1rem;
     list-style-type: none;
+    font-weight: bold;
 }
 
 .nav-list a {
     display: block;
     padding: 1.5rem;
     font-size: xx-large;
-    color: #00ff22;
+    color: #c02a4f;
 }
 
 .nav-list a:hover {
-    background-color: #00ff22;
-    color:#00563f;
+    background-color: #c02a4f;
+    color:#3e4dd0;
 }
 
 #welcome-section {
@@ -41,18 +42,33 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #00ff2a;
+    background-color: #1f153a;
     height: 100vh;
     font-size: 5rem;
+    color: #c02a4f;
 }
 
 .projects-grid {
     padding: 4.5rem 0;
     display: flex;
     flex-wrap: wrap;
-    background-color: #47f192;
+    background-color: #1f153a;
     margin: 0 auto;
     width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-right: 1rem;
+}
+
+#projects h1 {
+    background-color: #c02a4f;
+    color: #1f153a;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    padding: 1.5rem;
+    font-weight: 900;
+
 }
 
 #projects img {
@@ -63,8 +79,8 @@ a {
 
 figcaption {
     text-align: center;
-    font-size: x-large;
-    color: #00563f;
+    font-size: xx-large;
+    color: #c02a4f;
 }
 
 #contact {
@@ -73,19 +89,19 @@ figcaption {
     justify-content: center;
     align-items: center;
     height: 20rem;
-    background-color: #00563f;
+    background-color: #c02a4f;
 }
 
 #contact h1 {
     font-size: 4rem;
     padding: 3rem 0;
-    color: #00ff22;
+    color: #1f153a;
 }
 
 #contact p {
     font-size: xx-large;
     padding-bottom: 2rem;
-    color: #00ff22;
+    color: #1f153a;
 }
 
 #contact div {
@@ -97,9 +113,9 @@ figcaption {
 #contact div a {
     margin: 0 2rem;
     font-size: 2rem;
-    text-shadow: 2px 2px 2px 1px #00ff22;
+    text-shadow: 2px 2px 2px 1px #1f153a;
     transition: transform 0.3s ease-out;
-    color: #00ff22;
+    color: #1f153a;
 }
 
 #contact div a:hover {
@@ -111,7 +127,8 @@ footer {
     justify-content: center;
     font-size: 1.5rem;
     padding: 1rem;
-    background-color: springgreen;
+    background-color: #1f153a;
+    color: #c02a4f;
 }
 
 @media (max-width: 1200px) {
