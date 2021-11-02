@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure {
+    background-color: goldenrod;
+}
+
+figcaption {
+    text-align: center;
+    font-size: xx-large;
+    background-color: goldenrod;
+    padding-bottom: .5em;
+}
+
+img {
+    border: 10px solid goldenrod;
+}
