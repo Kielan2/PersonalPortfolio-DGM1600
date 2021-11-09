@@ -44,3 +44,13 @@ function populateShipView(shipData) {
     })
     shipView.appendChild(shipImage)
 }
+
+let figCaption = document.createElement('figcaption')
+    figCaption.textContent = `${shipNum}`
+    img.appendChild(figCaption)
+    figCaption.textContent = foundstarships.shipNum
+
+    const foundstarships = starships.find(starships => {
+        const convertedString = parseInt(getLastNumber(starships.url), 10)
+        return convertedString === (i + 1)
+    })

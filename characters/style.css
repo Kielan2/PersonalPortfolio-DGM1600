@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -22,8 +23,8 @@ header {
 .nav-list {
     display: flex;
     margin-right: 1rem;
-    list-style-type: none;
     font-weight: bold;
+    list-style-type: none;
 }
 
 .nav-list a {
@@ -60,6 +61,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1em;
 }
 
 figure {
@@ -68,9 +70,9 @@ figure {
 }
 
 figure img {
-    width: 200px;
+    width: 230px;
     border: 10px solid #3e4dd0;
-    border-radius: 1em;
+    border-radius: 30em;
 }
 
 figcaption {
@@ -80,9 +82,9 @@ figcaption {
     background-color: #3e4dd0;
     font-weight: bolder;
     padding: .5em;
-    margin-top: -2em;
-    border-radius: .8em;
-    padding-top: 2em;
+    border-radius: 30em;
+    margin-top: .3em;
+    margin-bottom: 1.5em;
 }
 
 footer {

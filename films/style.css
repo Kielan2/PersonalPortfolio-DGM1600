@@ -1,25 +1,85 @@
-main {
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+main#filmList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
+    margin: 3em 8em 3em 8em;
+    
 }
 
 header {
     font-size: xx-large;
     font-weight: bolder;
+    text-align: center;
+    background-color: #c02a4f;
+    color: #1f153a;
+    padding: 1em;
+    padding-top: 3.8em;
 }
 
+body {
+    background-color: #1f153a;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #3e4dd0;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1.5rem;
+    font-size: xx-large;
+    color: #c02a4f;
+}
+
+.nav-list a:hover {
+    background-color: #c02a4f;
+    color:#3e4dd0;
+}
+
+
 figure {
-    background-color: goldenrod;
+    background-color: #3e4dd0;
+    justify-content: space-evenly;
+    padding: .3em;
+    margin-top: 4em;
 }
 
 figcaption {
     text-align: center;
     font-size: xx-large;
-    background-color: goldenrod;
+    background-color: #3e4dd0;
     padding-bottom: .5em;
+    color: ghostwhite;
 }
 
 img {
-    border: 10px solid goldenrod;
+    border: 10px solid #3e4dd0;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    background-color: #c02a4f;
+    color: #1f153a;
 }
