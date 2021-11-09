@@ -1,4 +1,5 @@
 import { people } from "../data/people.js";
+import { getLastNumber } from "../utils/index.js";
 
 const mainContent = document.querySelector("#main");
 
@@ -17,7 +18,7 @@ const otherCharacters = people.filter((person) => {
 const header = document.createElement("header");
 const maleButton = document.createElement("button");
 maleButton.textContent = "Male Characters";
-populateDOM(otherCharacters);
+populateDOM(people);
 maleButton.addEventListener("click", () => populateDOM(maleCharacters));
 const femaleButton = document.createElement("button");
 femaleButton.textContent = "Female Characters";
@@ -44,11 +45,3 @@ function populateDOM(characters) {
   });
 }
 
-function getLastNumber(url) {
-  let end = url.lastIndexOf("/");
-  let start = end - 2;
-  if (url.charAt(start) === "/") {
-    start++;
-  }
-  return url.slice(start, end);
-}
