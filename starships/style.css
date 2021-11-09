@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main {
+    display: flex;
+}
+
+.nav {
+    margin-left: 1em;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: royalblue;
+    text-align: center;
+    font-size: xx-large;
+    color: seashell;
+}
