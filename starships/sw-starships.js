@@ -6,13 +6,12 @@ const navList = document.querySelector('.navList')
 const shipView = document.querySelector('.displaySection')
 
 const modal = document.querySelector('.modal')
-const closeButton = document.querySelector('.modal-background')
 const closeButton = document.querySelector('.modal-close')
+const modalBackground = document.querySelector('.modal-background')
 
 const missingMessage = document.querySelector('.missingMessage')
 
-closeButton.addEventListener('click', () => 
-    modal.classList.toggle('is-active'))
+closeButton.addEventListener('click', () => modal.classList.toggle('is-active'))
 modalBackground.addEventListener('click', () => modal.classList.toggle('is-active'))
 
 
@@ -41,7 +40,7 @@ function populateShipView(shipData) {
     shipImage.addEventListener('error', () => {
         shipImage.hidden = true
         modal.classList.toggle('is-active')
-        missingMessage.textContent = `The ship ${shipData} was lost in space`
+        missingMessage.textContent = `${shipData.name} was lost in space.`
     })
     shipView.appendChild(shipImage)
 }

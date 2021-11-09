@@ -23,8 +23,12 @@ maleButton.addEventListener("click", () => populateDOM(maleCharacters));
 const femaleButton = document.createElement("button");
 femaleButton.textContent = "Female Characters";
 femaleButton.addEventListener("click", () => populateDOM(femaleCharacters));
+const otherButton = document.createElement("button");
+otherButton.textContent = "More Characters";
+otherButton.addEventListener("click", () => populateDOM(otherCharacters));
 header.appendChild(maleButton);
 header.appendChild(femaleButton);
+header.appendChild(otherButton);
 
 document.body.insertBefore(header, mainContent);
 
