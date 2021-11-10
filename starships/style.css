@@ -63,11 +63,6 @@ header {
     padding-top: 3.8em;
 }
 
-h1 {
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
 section {
     width: 100%;
     display: flex;
@@ -83,7 +78,7 @@ section {
 }
 
 img {
-    width: 900px;
+    width: 1000px;
     height: 900px;
     border: 30px solid #3e4dd0;
     padding: 1em;

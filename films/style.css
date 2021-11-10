@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
+    list-style-type: none;
 }
 
 main#filmList {
@@ -33,13 +34,15 @@ body {
     justify-content: flex-end;
     width: 100%;
     background-color: #3e4dd0;
+    list-style-type: none;
 }
 
 .nav-list {
     display: flex;
     margin-right: 1rem;
-    list-style-type: none;
+    list-style-type: circle;
     font-weight: bold;
+    text-decoration:solid;
 }
 
 .nav-list a {
@@ -47,6 +50,8 @@ body {
     padding: 1.5rem;
     font-size: xx-large;
     color: #c02a4f;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .nav-list a:hover {

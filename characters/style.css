@@ -4,6 +4,9 @@
     font-family: 'Roboto Slab', serif;
 }
 
+
+
+
 header {
     display: flex;
     justify-content: space-evenly;
@@ -23,8 +26,8 @@ header {
 .nav-list {
     display: flex;
     margin-right: 1rem;
-    font-weight: bold;
     list-style-type: none;
+    font-weight: bold;
 }
 
 .nav-list a {
@@ -32,6 +35,8 @@ header {
     padding: 1.5rem;
     font-size: xx-large;
     color: #c02a4f;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .nav-list a:hover {
@@ -42,6 +47,7 @@ header {
 
 body {
     background-color: #1f153a;
+    min-height: 100vh;
 }
 
 button {
@@ -94,4 +100,6 @@ footer {
     padding: 1.3rem;
     background-color: #c02a4f;
     color: #1f153a;
+    position: sticky;
+    top: 100%;
 }
