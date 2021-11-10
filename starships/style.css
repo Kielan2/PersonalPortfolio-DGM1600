@@ -45,22 +45,15 @@
     justify-content: right;
 }
 
-#navbar {
-    display: flex;
-    position: fixed;
-    justify-content: flex-end;
-    width: 100%;
-    background-color: #3e4dd0;
-}
-
-header {
-    font-size: xx-large;
+h1 {
+    font-family: 'Roboto', sans-serif(bold);
+    font-size: 4em;
     font-weight: bolder;
     text-align: center;
     background-color: #c02a4f;
     color: #1f153a;
     padding: 1em;
-    padding-top: 3.8em;
+    padding-top: 2.2em;
 }
 
 section {
@@ -73,7 +66,6 @@ section {
 .box {
     background-color: #3e4dd0;
     text-align: center;
-    font-size: xx-large;
     color: ghostwhite;
 }
 

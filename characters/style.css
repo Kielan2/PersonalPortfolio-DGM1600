@@ -93,6 +93,15 @@ figcaption {
     margin-bottom: 1.5em;
 }
 
+strong {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: x-large;
+    color: #c02a4f;
+    text-decoration: none;
+}
+
 footer {
     display: flex;
     justify-content: center;

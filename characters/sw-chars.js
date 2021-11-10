@@ -3,6 +3,17 @@ import { getLastNumber, removeChildren } from "../utils/index.js";
 
 const mainContent = document.querySelector("#main");
 
+const allCharacters = people.filter((person) => {
+  if (
+    person.gender === "male" ||
+    person.gender === "female" ||
+    person.gender === "hermaphrodite" ||
+    person.gender === "n/a" ||
+    person.gender === "none"
+  ) {
+    return person;
+  }
+});
 const maleCharacters = people.filter((person) => person.gender === "male");
 const femaleCharacters = people.filter((person) => person.gender === "female");
 const otherCharacters = people.filter((person) => {
@@ -16,6 +27,9 @@ const otherCharacters = people.filter((person) => {
 });
 
 const header = document.createElement("header");
+const allButton = document.createElement("button");
+allButton.textContent = "All Characters"
+allButton.addEventListener("click", () => populateDOM(allCharacters));
 const maleButton = document.createElement("button");
 maleButton.textContent = "Male Characters";
 populateDOM(people);
@@ -24,11 +38,13 @@ const femaleButton = document.createElement("button");
 femaleButton.textContent = "Female Characters";
 femaleButton.addEventListener("click", () => populateDOM(femaleCharacters));
 const otherButton = document.createElement("button");
-otherButton.textContent = "More Characters";
+otherButton.textContent = "Other Characters";
 otherButton.addEventListener("click", () => populateDOM(otherCharacters));
+header.appendChild(allButton);
 header.appendChild(maleButton);
 header.appendChild(femaleButton);
 header.appendChild(otherButton);
+
 
 document.body.insertBefore(header, mainContent);
 
@@ -47,3 +63,8 @@ function populateDOM(characters) {
   });
 }
 
+let topButton = document.getElementById("bttbutton");
+otherButton.addEventListener("click", () => removeChildren(topButton));
+maleButton.addEventListener("click", () => appendChild(topButton));
+allButton.addEventListener("click", () => appendChild(topButton));
+femaleButton.addEventListener("click", () => appendChild(topButton));
