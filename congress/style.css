@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #c02a4f;
+    color: #1f153a;
+    font-weight: bolder;
+}
+
+h1 {
+    
+    font-family: 'Roboto', sans-serif(bold);
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #c02a4f;
+    color: #1f153a;
+    padding: 1em;
+    padding-top: 2.2em;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #3e4dd0;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1.5rem;
+    font-size: xx-large;
+    color: #c02a4f;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background-color: #c02a4f;
+    color:#3e4dd0;
+}
+
+body {
+    background-color: #1f153a;
+    color: #c02a4f;
+}
+
+.senators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1em .5em;
+}
+
+figure {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    border: 5px solid #3e4dd0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+strong {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: x-large;
+    color: #c02a4f;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    background-color: #c02a4f;
+    color: #1f153a;
+}
