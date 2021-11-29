@@ -6,10 +6,23 @@
 header {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #c02a4f;
     color: #1f153a;
     font-weight: bolder;
+    padding-bottom: 2em;
+}
+
+header h2 {
+    padding: .5em;
+    list-style-type: none;
+    
+}
+
+header li {
+    list-style-type: none;
+    font-size: larger;
+    padding: .1em;
 }
 
 h1 {
@@ -20,8 +33,13 @@ h1 {
     text-align: center;
     background-color: #c02a4f;
     color: #1f153a;
-    padding: 1em;
+    padding: .5em;
     padding-top: 2.2em;
+}
+
+header h3 {
+    padding-top: 1em;
+    font-size: xx-large;
 }
 
 #navbar {
@@ -75,6 +93,14 @@ figure {
 
 figcaption {
     text-align: center;
+}
+
+.senators h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    justify-content: center;
+    margin: 1em 70vh 1em 70vh;
 }
 
 strong {

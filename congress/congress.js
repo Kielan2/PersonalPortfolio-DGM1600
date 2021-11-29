@@ -6,6 +6,8 @@ const members = [...senators, ...representatives]
 const senatorDiv = document.querySelector('.senators')
 const loyaltyHeading = document.querySelector('.mostLoyal')
 const seniorityHeading = document.querySelector('.seniority')
+const youngestHeading = document.querySelector('.youngest')
+
 
 function SimplifiedMembers(chamberFilter) {
     const filteredArray = members.filter(member => chamberFilter ? member.short_title === chamberFilter : member)
@@ -46,6 +48,9 @@ const mostSeniorMember = SimplifiedMembers().reduce((acc, senator) => acc.senior
 
 seniorityHeading.textContent = `The most senior member of Congress is ${mostSeniorMember.name} who has been in congress for ${mostSeniorMember.seniority} years.`
 
+const youngestMember = SimplifiedMembers().reduce((acc, senator) => acc.seniority < senator.seniority ? acc : senator)
+
+youngestHeading.textContent = `The newest member of Congress is ${youngestMember.name} who has been in congress for ${youngestMember.seniority} years.`
 
 const mostLoyal = SimplifiedMembers().reduce((acc, senator) => {
     if (senator.loyaltyPct === 100) {
@@ -58,7 +63,7 @@ const cowardList = document.createElement('ol')
 
 const spineless = mostLoyal.map(coward => {
     let listItem = document.createElement('li')
-    listItem.textContent = coward.name
+    listItem.textContent = `${coward.name} has always voted ${coward.party}`
     cowardList.appendChild(listItem)
 })
 
