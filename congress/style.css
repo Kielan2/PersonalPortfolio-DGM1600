@@ -6,7 +6,7 @@
 header {
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #c02a4f;
     color: #1f153a;
     font-weight: bolder;
