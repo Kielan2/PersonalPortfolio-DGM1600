@@ -63,7 +63,7 @@ const cowardList = document.createElement('ol')
 
 const spineless = mostLoyal.map(coward => {
     let listItem = document.createElement('li')
-    listItem.textContent = `${coward.name} has always voted ${coward.party}`
+    listItem.textContent = `${coward.name} (${coward.party})`
     cowardList.appendChild(listItem)
 })
 

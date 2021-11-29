@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #c02a4f;
+    color: #1f153a;
+    font-weight: bolder;
+    padding-bottom: 10em;
+}
+
+
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #3e4dd0;
+    list-style-type: none;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: circle;
+    font-weight: bold;
+    text-decoration:solid;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1.5rem;
+    font-size: xx-large;
+    color: #c02a4f;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background-color: #c02a4f;
+    color:#3e4dd0;
+}
+
+.scene {
+    width: 200px;
+    height: 260px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+.cardFace {
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    background: #3e4dd0;
+}
+
+.back {
+    background: #1f153a;
+}
