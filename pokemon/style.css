@@ -50,16 +50,27 @@ header {
 .scene {
     width: 200px;
     height: 260px;
+    perspective: 600px;
 }
 
 .card {
     width: 100%;
     height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
 }
 
 .cardFace {
+    position: absolute;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
 }
 
 .front {
@@ -68,4 +79,10 @@ header {
 
 .back {
     background: #1f153a;
+    transform: rotateY(180deg);
+}
+
+figure img {
+    width: 200px;
+    
 }

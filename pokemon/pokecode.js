@@ -8,7 +8,7 @@ async function getAPIData(url) {
     }
 }
 
-getAPIData('https://pokeapi.co/api/v2/pokemon/25')
+getAPIData(`https://pokeapi.co/api/v2/pokemon/25`)
 .then((data) => {
     console.log(data)
     populatePokeCards(data)
@@ -21,15 +21,28 @@ function populatePokeCards(singlePokemon) {
     pokeScene.className = 'scene'
     const pokeCard = document.createElement('div')
     pokeCard.className = 'card'
-    const pokeFront = document.createElement('div')
-    pokeFront.className = 'cardFace front'
-    pokeFront.textContent = 'Front'
+    pokeCard.addEventListener('click', () => 
+        pokeCard.classList.toggle('is-flipped'))
+
+    const front = populateCardFront(singlePokemon)
     const pokeBack = document.createElement('div')
     pokeBack.className = 'cardFace back'
     pokeBack.textContent = 'Back'
     
-    pokeCard.appendChild(pokeFront)
+    pokeCard.appendChild(front)
     pokeCard.appendChild(pokeBack)
     pokeScene.appendChild(pokeCard)
     pokeGrid.appendChild(pokeScene)
+}
+
+function populateCardFront(pokemon) {
+    const pokeFront = document.createElement('figure')
+    pokeFront.className = 'cardFace front'
+    const pokeImg = document.createElement('img')
+    pokeImg.src = `https://raw.githubusercotnent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`
+    const pokeCaption = document.createElement('figcaption')
+    pokeCaption.textContent = 'Front'
+    pokeFront.appendChild(pokeImg)
+    pokeFront.appendChild(pokeCaption)
+    return pokeFront
 }
