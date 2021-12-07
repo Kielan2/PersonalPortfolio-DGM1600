@@ -5,6 +5,12 @@
     list-style-type: none;
 }
 
+.pokeGrid {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 header {
     display: flex;
     text-align: center;
@@ -51,6 +57,7 @@ header {
     width: 200px;
     height: 260px;
     perspective: 600px;
+    margin: .5rem;
 }
 
 .card {
@@ -84,5 +91,4 @@ header {
 
 figure img {
     width: 200px;
-    
 }
