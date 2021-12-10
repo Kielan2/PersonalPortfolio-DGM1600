@@ -5,20 +5,57 @@
     list-style-type: none;
 }
 
+body {
+    min-height: 100vh;
+    background-color: #1f153a;
+}
+
 .pokeGrid {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 30px #c02a4f;
+}
 
+.pokeGrid figure:hover {
+    box-shadow: 0px 0px 50px #c02a4f;
+    transform: translateY(-8px);
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     background-color: #c02a4f;
     color: #1f153a;
     font-weight: bolder;
-    padding-bottom: 10em;
+    justify-content: space-around;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+header button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+    justify-content: space-around;
+    margin: 2em;
+    background-color: #1f153a;
+    color:#c02a4f;
+    margin-top: 7.5em;
+    padding: 1.3em;
+    font-size: large;
+    border: solid 5px #3e4dd0;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
 }
 
 
@@ -29,6 +66,7 @@ header {
     width: 100%;
     background-color: #3e4dd0;
     list-style-type: none;
+    z-index: 9999;
 }
 
 .nav-list {
@@ -78,17 +116,56 @@ header {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border: solid 5px #011afd;
 }
 
 .front {
     background: #3e4dd0;
+    color: #1f153a;
+    font-size: x-large;
+    font-weight: bold;
+   
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
 }
 
 .back {
-    background: #1f153a;
+    background: #c02a4f;
     transform: rotateY(180deg);
+    color: #1f153a;
+    font-size: x-large;
+}
+
+ul li{
+    list-style-type: upper-roman;
+    padding: .1em;
+    margin-left: .1em;
+}
+
+h4 {
+    padding: .7em;
+    display: flex;
+    justify-content: center;
 }
 
 figure img {
     width: 200px;
+}
+
+#Pokemon {
+    background-color: #c02a4f;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    background-color: #c02a4f;
+    color: #1f153a;
+    position: sticky;
+    top: 100%;
 }
