@@ -8,8 +8,29 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    height: 1000px;
+}
+
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/images/ice.jpg);
+}
+
+li {
+    display: flex;
+   
+    padding: 5rem;
 }
 
 #navbar {
