@@ -14,6 +14,13 @@ body {
 
 a {
     text-decoration: none;
+    color: ghostwhite;
+}
+
+a:hover {
+    text-shadow: 2px 2px 2px 1px #1f153a;
+    transition: transform 0.3s ease-out;
+    transform: translateY(-8px);
 }
 
 ul {
@@ -23,8 +30,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(/images/ice.jpg);
+    height: 110vh;
+    background-image: url(/images/R.jpg);
+    color: ghostwhite;
 }
 
 li {
@@ -153,7 +161,7 @@ footer {
     justify-content: center;
     font-size: 1.5rem;
     padding: 1.3rem;
-    background-color: #1f153a;
+    background-color: ghostwhite;
     color: #c02a4f;
 }
 
