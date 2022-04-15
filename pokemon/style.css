@@ -53,7 +53,7 @@ header button {
     padding: 1.3em;
     font-size: large;
     border: solid 5px #3e4dd0;
-    border-radius: 50%;
+    border-radius: 15%;
     float: left;
     cursor: pointer;
 }
