@@ -1,11 +1,17 @@
 * {
     margin: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Exo 2', sans-serif;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    height:  100vh;
+    background: url(/images/R\ \(1\).jpg) no-repeat;
+    background-color: black;
 }
 
 a {
@@ -17,7 +23,6 @@ a {
     position: fixed;
     justify-content: flex-end;
     width: 100%;
-    background-color: #3e4dd0;
 }
 
 .nav-list {
@@ -44,26 +49,25 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1f153a;
-    height: 100vh;
     font-size: 5rem;
-    color: #c02a4f;
+    color: #ffff00;
+    margin-top: 6rem;
+    font-weight: bold;
 }
 
 .projects-grid {
     padding: 4.5rem;
     display: flex;
     flex-wrap: wrap;
-    background-color: #1f153a;
     margin: 0 auto;
     width: 100%;
     justify-content: center;
     justify-content: space-evenly;
     padding-right: 1rem;
+    margin-top: 8em;
 }
 
 #projects h1 {
-    background-color: #c02a4f;
     color: #1f153a;
     display: flex;
     justify-content: center;
@@ -74,17 +78,20 @@ a {
 
 #projects img {
     margin: 1em 1em;
-    border: 10px solid #c02a4f;
+    border: 5px solid #ffff00;
+    border-radius: 5px;
 }
 
 .projects-grid img:hover {
-    box-shadow: 0px 0px 30px #c02a4f;
+    box-shadow: 0px 0px 30px #2ea0df;
+    transform: translateY(-8px);
+    transition: all 0.5s ease;
 }
 
 figcaption {
     text-align: center;
     font-size: xx-large;
-    color: #c02a4f;
+    color: #ffff00;
     margin-bottom: 1.5em;
 }
 
@@ -130,20 +137,31 @@ figcaption {
 footer {
     display: flex;
     justify-content: center;
+    font-weight: lighter !important;
     font-size: 1.5rem;
-    padding: 1.3rem;
-    background-color: #1f153a;
-    color: #c02a4f;
+    padding: 1rem;
+    color: #f3f35cc9;
+    margin-top: 3em;
 }
 
 @media (max-width: 1200px) {
     html {
         font-size: 80%;
     }
+
+    body {
+        height:  100vh;
+        background-color: black;
+    }
 }
 
 @media (max-width: 900px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
+    }
+
+    body {
+        height:  100vh;
+        background-color: black;
     }
 }
