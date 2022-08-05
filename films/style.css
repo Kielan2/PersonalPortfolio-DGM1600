@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: 'Exo 2', sans-serif;
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 main#filmList {
@@ -14,7 +15,7 @@ main#filmList {
 }
 
 body {
-    background: url(/images/T3xqnS\ \(Large\).jpeg);
+    background: url(/images/R.jpg) no-repeat;
     background-color: black;
 }
 
@@ -39,7 +40,7 @@ h1 {
 
 .nav-list {
     display: flex;
-    margin-right: 1rem;
+    margin-right: 10rem;
     list-style-type: circle;
     font-weight: bold;
     text-decoration:solid;

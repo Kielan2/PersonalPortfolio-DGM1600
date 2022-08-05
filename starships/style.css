@@ -2,11 +2,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #main {
     display: flex;
     background: url(/images//1I3yb5l.jpg) no-repeat;
+    justify-content: center;
 }
 
 #main li {
@@ -14,23 +16,17 @@
     color: #ffff00;
 }
 
-#main ul {
-    margin-top: 5rem;
-}
-
 #navbar {
-    display: flex;
-    position: fixed;
-    justify-content: flex-end;
     width: 100%;
     background-color: black;
 }
 
 .nav-list {
     display: flex;
-    margin-right: 1rem;
     list-style-type: none;
     font-weight: bold;
+    justify-content: right;
+    margin-right: 10rem;
 }
 
 .nav-list a {
@@ -48,6 +44,7 @@
 .nav {
     margin: 1.5em;
     font-size: x-large;
+    margin-left: 10rem;
 }
 
 .navList {
@@ -57,19 +54,22 @@
 h1 {
     font-size: 2em;
     font-weight: bolder;
-    text-align: center;
-    background-color: black;
+    background-color: none;
     color: #ffff00;
     padding: 1em;
     display: flex;
-    justify-content: flex-start !important;
+    justify-content: center;
 }
 
-section {
+.displaySection {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#film {
+    background-color: #000000c3 !important;
 }
 
 .box {
@@ -89,7 +89,7 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    padding: 1.3rem;
+    padding: 1rem;
     background-color: black;
     color: #f3f35cc9;
 }
