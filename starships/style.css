@@ -42,7 +42,7 @@
 }
 
 .nav {
-    margin: 1.5em;
+    margin: 1em;
     font-size: x-large;
     margin-left: 10rem;
 }
@@ -56,7 +56,7 @@ h1 {
     font-weight: bolder;
     background-color: none;
     color: #ffff00;
-    padding: 1em;
+    padding: .5em;
     display: flex;
     justify-content: center;
 }
