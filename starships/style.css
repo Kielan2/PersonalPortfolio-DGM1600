@@ -83,6 +83,7 @@ img {
     height: 600px;
     border: 10px solid #ffff00;
     border-radius: 5px;
+    pointer-events: none;
 }
 
 footer {
